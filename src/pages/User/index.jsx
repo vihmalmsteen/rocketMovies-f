@@ -37,6 +37,9 @@ export function User() {
             const imagePreview = URL.createObjectURL(file);
             setAvatar(imagePreview);
             
+            console.log(file)
+            console.log(imagePreview)
+
             const formData = new FormData();
             formData.append('avatar', file); // Adicione o arquivo ao FormData
             
