@@ -56,7 +56,7 @@ export function CreateMovie() {
                 <Header />
             </div>
               <div className='main'>
-                <Link className='hrefLink' to={'/'}>
+                <Link className='hrefLink' to={'/home'}>
                     <BackBtn text={'Voltar'}/>
                 </Link>
                 <h1>Novo Filme</h1>

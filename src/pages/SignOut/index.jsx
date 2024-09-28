@@ -96,7 +96,7 @@ export function SignOut() {
                         <Button title={'Criar conta'} onClick={handleSignUp}/>
                     {/* </Link> */}
                 </div>
-                <Link className='hrefLink' to={'/SignIn'}>
+                <Link className='hrefLink' to={'/'}>
                     <BackBtn text={'Voltar para o login.'}/>
                 </Link>
             

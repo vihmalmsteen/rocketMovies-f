@@ -12,7 +12,7 @@ import {User} from '../pages/User'
 export function AppRoutes() {
     return (
     <Routes>
-        <Route path="/" element={<Home/>}/>
+        <Route path="/home" element={<Home/>}/>
         <Route path="/CreateMovie" element={<CreateMovie/>}/>
         <Route path="/MoviePreview" element={<MoviePreview/>}/>
         <Route path="/User" element={<User/>}/>

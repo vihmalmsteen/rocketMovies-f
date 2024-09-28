@@ -62,7 +62,7 @@ export function MoviePreview({totalStars=5}) {
             }
             const response = await api.delete(`/notes/delete/${note_id}`)
             alert('Nota removida com sucesso!')
-            navigate('/')
+            navigate('/home')
         } catch (error) {
             console.log(error.response.data)
         }
@@ -86,7 +86,7 @@ export function MoviePreview({totalStars=5}) {
             <main>
               <div className='aboutAll'>
                 
-                <Link className='hrefLink' to={'/'}>
+                <Link className='hrefLink' to={'/home'}>
                     <BackBtn text={'Voltar'}/>
                 </Link>
                   <div className='aboutMovie'>

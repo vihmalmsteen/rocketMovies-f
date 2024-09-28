@@ -36,7 +36,7 @@ export function SignIn() {
 
                     <Input icon={MdMailOutline} placeTitle={'E-mail'} onChange={(e) => {setEmail(e.target.value)}}/>
                     <Input icon={MdLockOutline} type={'password'} placeTitle={'Senha'} onChange={(e) => {setPassword(e.target.value)}}/>
-                    <Link className='hrefLink' to={'/'}>
+                    <Link className='hrefLink' to={'/home'}>
                         <Button title={'Entrar'} onClick={handleSignIn}/>
                     </Link>
                 </div>

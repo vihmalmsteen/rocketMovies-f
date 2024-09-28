@@ -20,13 +20,11 @@ export function User() {
     const [newPassword, setNewPassword] = useState('')
 
     const {user} = useAuth()
-    console.log(user)
+    
     const avatarUrl = user.avatar ? `${api.defaults.baseURL}/files/${user.avatar}` : avatarPlaceholder
     const [avatar, setAvatar] = useState(avatarUrl)
     const [avatarFile, setAvatarFile] = useState(null)
-    console.log(avatarUrl)
     
-
     async function handleChangeAvatar(e) {
         const file = e.target.files[0];
         if (file) {
@@ -121,7 +119,7 @@ export function User() {
         <Container>
             <div className='header'>
                 <div className="backbtn">
-                    <Link className='hrefLink' to={'/'}>
+                    <Link className='hrefLink' to={'/home'}>
                         <BackBtn text={'Voltar'}/>
                     </Link>
                 </div>
