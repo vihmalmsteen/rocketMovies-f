@@ -25,6 +25,11 @@ export function User() {
     const [avatar, setAvatar] = useState(avatarUrl)
     const [avatarFile, setAvatarFile] = useState(null)
     
+    console.log(`user.avatar:\n${user.avatar}`)
+    console.log(`api.defaults:\n${api.defaults.baseURL}/files/${user.avatar}`)
+    console.log(`defaults+userAvatar:\n${api.defaults.baseURL}/files/${user.avatar}`)
+    console.log(`avatarPlaceholder:\n${avatarPlaceholder}`)
+
     async function handleChangeAvatar(e) {
         const file = e.target.files[0];
         if (file) {
