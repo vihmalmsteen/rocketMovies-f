@@ -6,6 +6,8 @@ import axios from 'axios'
  * 'baseURL' serve para definir qual é o link do backend
  */
 export const api = axios.create({
-    baseURL: 'http://localhost:3000'
+    baseURL: 'https://rocketmovies-b.onrender.com'
 })
 
+// https://rocketmovies-b.onrender.com
+// http://localhost:3000
