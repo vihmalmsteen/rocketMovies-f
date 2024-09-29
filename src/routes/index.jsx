@@ -9,7 +9,7 @@ export function Routes() {
     
     return (
         <BrowserRouter>
-                {user ? <AppRoutes element={<Navigate to="/home"/>} /> : <AuthRoutes/>}
+                {user ? <AppRoutes/> : <AuthRoutes/>}
         </BrowserRouter>
     )
 }

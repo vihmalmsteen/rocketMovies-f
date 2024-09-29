@@ -25,6 +25,11 @@ export function User() {
     const [avatar, setAvatar] = useState(avatarUrl)
     const [avatarFile, setAvatarFile] = useState(null)
     
+    console.log(`user.avatar:\n${user.avatar}`)
+    console.log(`api.defaults:\n${api.defaults.baseURL}/files/${user.avatar}`)
+    console.log(`defaults+userAvatar:\n${api.defaults.baseURL}/files/${user.avatar}`)
+    console.log(`avatarPlaceholder:\n${avatarPlaceholder}`)
+
     async function handleChangeAvatar(e) {
         const file = e.target.files[0];
         if (file) {
@@ -32,6 +37,9 @@ export function User() {
             const imagePreview = URL.createObjectURL(file);
             setAvatar(imagePreview);
             
+            console.log(file)
+            console.log(imagePreview)
+
             const formData = new FormData();
             formData.append('avatar', file); // Adicione o arquivo ao FormData
             
